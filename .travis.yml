@@ -1,0 +1,7 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+# command to install dependencies
+# command to run tests
+script: python3 -m unittest discover -s tests -p "*_test.py"
