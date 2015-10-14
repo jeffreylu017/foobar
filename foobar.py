@@ -8,5 +8,6 @@ def filter(pred, iterable):
 
 def badfilter(pred, iterable):
     for el in iterable:
-        yield el
+        if pred(el):
+            yield el
 
