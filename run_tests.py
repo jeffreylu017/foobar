@@ -10,7 +10,7 @@ def test_suite(suite_dir):
     suite = loader.discover('tests', pattern='*test.py')
     runner = unittest.TextTestRunner()
     result = runner.run(suite)
-    return int(result.wasSuccessful())
+    return 0 if result.wasSuccessful() else 1
 
 def main():
     failed = 0
